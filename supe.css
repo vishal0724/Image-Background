@@ -2,7 +2,8 @@ body{
     margin: 0;
     padding: 0;
     color: white;
-    background-color: rgb(208, 211, 212);
+    width: 100%;
+    background-color: rgb(240, 233, 233);
 }
 .head{
     position: sticky;
@@ -16,13 +17,14 @@ body{
     border-bottom: 1.5px solid rgb(1, 152, 155);
     border-radius: 0.5%;
     transition: 0.5s;
+    z-index: 1;
 }
 .head:hover{
     top: 0px;
 }
 #logOut{
     position: relative;
-    left: 40%;
+    left: 25%;
     font-size: 130%;
 }
 snap{
@@ -32,10 +34,15 @@ snap{
     font-size: large;
     transition: 0.25s;
 }
-snap:hover{
+snap:hover, a:hover{
     color: rgba(0, 0, 0, 0.774);
     padding-bottom: 6px;
     border-bottom: 1.5px solid white;
+}
+a{
+    text-decoration: none;
+
+    color: white;
 }
 .upperImage{
     background-image: url("pic3.jpg");
@@ -47,19 +54,19 @@ snap:hover{
 }
 img{
     position: relative;
-    left: 45%;
+    left: 46%;
     top: 80px;
     max-width: 90px;
     height: 90px;
-    border: 0.7px solid rgb(1, 152, 155);
+    box-shadow: 0 0 50px 15px black;
+    border: 0.5px solid rgb(1, 152, 155);
     border-radius: 50%;
 }
 #name{
     position: relative;
-    left: 40%;
     top: 80px;
     max-width: 100%;
-    height: 90px;
+    text-align: center;
 }
 .gap{
     max-width: 100%;
@@ -72,6 +79,7 @@ img{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.8;
     margin: 3% 1% 0 1%;
     max-width: 100%;
     height: 900px;
@@ -82,8 +90,20 @@ img{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.8;
     margin: 3% 1% 0 1%;
     max-width: 100%;
     height: 900px;
     border-radius: 0.6%;
+}
+.statement{
+    position: relative;
+    top: 100px;
+    left: 70px;
+    max-width: 50%;
+}
+.foot{
+    max-width: 100%;
+    height: 400px;
+    opacity: 0.5;
 }
