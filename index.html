@@ -4,6 +4,19 @@
         <link rel="stylesheet" href="./supe.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    
+        <script>
+            function name(){
+                var n1 = prompt("Please Type Name:  ");
+                if (n1 != ""){
+                    document.getElementById('name').innerHTML= "Welcome "+ n1;
+                    document.getElementById('name').style.textAlign = "center";
+                }else{
+                    document.getElementById('name').innerHTML= "Welcome";
+                    document.getElementById('name').style.left = 'Center';
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -44,18 +57,5 @@
                 <li>Drive</li>
             </ul>
         </footer>
-
-        <script>
-            function name(){
-                var n1 = prompt("Please Type Name:  ");
-                if (n1 != ""){
-                    document.getElementById('name').innerHTML= "Welcome "+ n1;
-                    document.getElementById('name').style.textAlign = "center";
-                }else{
-                    document.getElementById('name').innerHTML= "Welcome";
-                    document.getElementById('name').style.left = 'Center';
-                }
-            }
-        </script>
     </body>
 </html>
