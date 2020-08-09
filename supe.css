@@ -106,6 +106,14 @@ img{
     height: 400px;
     opacity: 0.5;
 }
+ul li{
+    color: black;
+    list-style-type: none;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    font-size: large;
+}
 @media screen and (max-width: 800px){
     .head{
         position: sticky;
