@@ -4,19 +4,6 @@
         <link rel="stylesheet" href="./supe.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
-    
-        <script>
-            function name(){
-                var n1 = prompt("Please Type Name:  ");
-                if (n1 != ""){
-                    document.getElementById('name').innerHTML= "Welcome "+ n1;
-                    document.getElementById('name').style.textAlign = "center";
-                }else{
-                    document.getElementById('name').innerHTML= "Welcome";
-                    document.getElementById('name').style.left = 'Center';
-                }
-            }
-        </script>
     </head>
 
     <body>
@@ -35,9 +22,19 @@
 
         <div class="upperImage">
            <img src="./Vishal.jpeg">
-           <h1 id="name" onload="name()">Welcome</h1>
+           <h1 id="name" onclick="name()">Welcome</h1>
         </div>
-        <div class="gap"></div>
+
+        <div class="gap">
+            <img src="./pic4.jpg" style="
+            top: 6px;
+            max-width: 50px;
+            height: 50px;
+            box-shadow: none;
+            border: none;
+            border-radius: none;" class="dIcon">
+        </div>
+
         <div class="middleImage">
             <h1 class="statement">“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”</h1>
         </div>
@@ -56,5 +53,18 @@
                 <li>Drive</li>
             </ul>
         </footer>
+
+        <script>
+            function name(){
+                var n1 = prompt("Please Type Name:  ");
+                if (n1 == null){
+                    document.getElementById('name').innerHTML= "Welcome";
+                }else if (n1 != ""){
+                    document.getElementById('name').innerHTML= "Welcome "+ n1;
+                }else{
+                    document.getElementById('name').innerHTML= "Welcome";
+                }
+            }
+        </script>
     </body>
 </html>
